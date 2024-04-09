@@ -1,6 +1,6 @@
 package com.exercicio.exercicio.services;
 
-import com.exercicio.exercicio.Client;
+import com.exercicio.exercicio.models.Client;
 import com.exercicio.exercicio.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,12 +14,12 @@ public class ClientService {
     @Autowired
     private ClientRepository clientRepository;
 
-    // Método para cadastrar um novo cliente
+
     public Client createClient(Client client) {
         return clientRepository.save(client);
     }
 
-    // Método para alterar um cliente existente
+
     public Client updateClient(Long id, Client newClientData) {
         Optional<Client> existingClientOptional = clientRepository.findById(id);
         if (existingClientOptional.isPresent()) {
@@ -32,12 +32,12 @@ public class ClientService {
         }
     }
 
-    // Método para excluir um cliente pelo ID
+
     public void deleteClient(Long id) {
         clientRepository.deleteById(id);
     }
 
-    // Método para listar todos os clientes
+
     public List<Client> getAllClients() {
         return clientRepository.findAll();
     }

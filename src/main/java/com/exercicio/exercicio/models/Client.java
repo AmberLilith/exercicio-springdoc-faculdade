@@ -1,4 +1,4 @@
-package com.exercicio.exercicio;
+package com.exercicio.exercicio.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

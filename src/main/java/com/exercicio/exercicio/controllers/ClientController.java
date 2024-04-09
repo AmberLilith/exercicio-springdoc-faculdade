@@ -1,6 +1,6 @@
 package com.exercicio.exercicio.controllers;
 
-import com.exercicio.exercicio.Client;
+import com.exercicio.exercicio.models.Client;
 import com.exercicio.exercicio.services.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
